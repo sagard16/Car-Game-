@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: darkgrey;
+}
+
+#game{
+    width: 390px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background: url(bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#Bluecar{
+    width: 130px;
+    height: 100px;
+    
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: move 2s linear infinite;
+    text-align: center;
+}
+
+#Bluecar img{
+    height: 100px;
+}
+
+@keyframes move{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+
+#Rececar{
+    width: 130px;
+    height: 100px;
+    
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+
+#Rececar img{
+    height: 100px;
+}
+
+
+#result{
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    
+}
+
+#Score{
+    font-size: 2.2rem;
+    color: brown;
+}
+
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: aqua;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
